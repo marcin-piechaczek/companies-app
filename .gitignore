@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+#config
+/src/config/config.tsx
+.idea
+
 # testing
 /coverage
 

@@ -1,4 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) + TypeScript.
+
+## About
+The project contains a table of companies with incomes fetched from an external API.
+
+Files structure and app architecture:
+* App.tsx - Main app wrapper.
+* components - Each component has its own directory, styles are in the 'styles' subfolder.
+* config - Please make sure to add your API URL and rename the file to 'config.tsx'.
+* images - App assets can be found here.
+* index.tsx - Root React app render function.
+* services - All components logic goes here. Types and interfaces can be found on the 'interfaces' subfolder.
+```bash
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   └── table
+│   │       ├── TablePagination.tsx
+│   │       ├── TableRow.tsx
+│   │       ├── TableWrapper.tsx
+│   │       ├── index.tsx
+│   │       └── styles
+│   │           └── index.tsx
+│   ├── config
+│   │   ├── config.example.tsx
+│   ├── images
+│   │   └── sort-solid.svg
+│   ├── index.tsx
+│   └── services
+│       ├── ApiService.tsx
+│       ├── TableService.tsx
+│       ├── incomeService.test.tsx
+│       ├── incomeService.tsx
+│       └── interfaces
+│           ├── company.interface.ts
+│           ├── companyDetails.interface.ts
+│           ├── incomes.interface.ts
+│           ├── tablePaginationProps.interface.ts
+│           ├── tableRowProps.interface.ts
+│           └── tableWrapperProps.inteface.ts
+└── tsconfig.json
+```
+## Before start
+
+Edit config file with your API URL, example:
+### `export const API_URL = 'https://myapi.io';`
+
+Install dependencies:
+## `yarn install`
+
+## Working demo
+[DEMO](https://companies-demo.piechaczek.dev)
 
 ## Available Scripts
 
